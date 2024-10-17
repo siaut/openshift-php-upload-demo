@@ -7,6 +7,7 @@
 <?php
 $datadir = "/opt/app-root/src/uploaded";
 /* Display all file except core application files */
+$thelist = "";
 if ($handle = opendir($datadir)) {
    while (false !== ($file = readdir($handle))) {
           /* This is to exclude files from being shown on the screen - probably a better way of doing this */
